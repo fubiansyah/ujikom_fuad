@@ -1,0 +1,13 @@
+/node_modules
+/public/css
+/public/js
+/public/*.html
+/storage/*.key
+/vendor
+/.idea
+Homestead.json
+Homestead.yaml
+.env
+studio.json
+composer.lock
+.DS_Store

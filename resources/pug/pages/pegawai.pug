@@ -1,0 +1,32 @@
+//-
+//- Kepegawaian
+//-
+h1 Input Data Karyawan
+table
+  tr
+    td
+      form(id='formPegawai' autocomplete='off' onsubmit='onFormSubmit()')
+        div
+          label(for='nomorInduk') Nomor Induk Karyawan
+          input#nomorInduk(type='text' name='nomorInduk' placeholder='Masukan Nomor Induk Karyawan')
+        div
+          label(for='nama') Nama Karyawan
+          input#nama(type='text' name='nama' placeholder='Masukan Nama Karyawan')
+        div
+          label(for='gaji') Gaji karyawan
+          input#gaji(type='number' name='gaji' placeholder='Masukan Gaji Karyawan')
+        div
+          label(for='tunjangan')  Tunjangan Karyawan
+          input#tunjangan(type='number' name='tunjangan' placeholder='Masukan Tunjangan Karyawan')
+        .form_action--button
+          input(type='submit', value="Submit")
+          input(type='reset', value="Reset")
+    td
+      table#storeList.list
+        thead
+          tr
+            th  Nomor Induk Karyawan
+            th  Nama Karyawan
+            th Gaji karyawan
+            th Tunjangan Karyawan
+        tbody

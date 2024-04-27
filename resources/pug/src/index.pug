@@ -1,0 +1,13 @@
+//-
+//- Homepage
+//-
+extends ../layouts/master
+
+block vars
+  - var pageTitle     = 'Sistem Kepegawaian';
+  - var pageName      = 'home';
+  - var bodyClass     = 'home';
+
+block main
+  //- Start: Table kepegawaian
+  include    ../pages/pegawai

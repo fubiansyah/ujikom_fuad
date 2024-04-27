@@ -1,0 +1,113 @@
+//=====================================================================
+// Mixins Functions
+//=====================================================================
+@mixin flex() {
+  display: flex;
+}
+
+@mixin flex-direction($dir) {
+  flex-direction: $dir;
+}
+
+@mixin flex-wrap($wrap) {
+  flex-wrap: $wrap;
+}
+
+@mixin align-items($align) {
+  align-items: $align;
+}
+
+@mixin align-self($align) {
+  align-self: $align;
+}
+
+@mixin align-content($align) {
+  align-content: $align;
+}
+
+
+//=====================================================================
+// Mixins Shortcode
+//=====================================================================
+@mixin fx() {
+  @include flex();
+}
+
+//Flex direction
+@mixin fx-d-r() {
+  @include flex-direction(row);
+}
+@mixin fx-d-rr() {
+  @include flex-direction(row-reverse);
+}
+@mixin fx-d-c() {
+  @include flex-direction(column);
+}
+@mixin fx-d-cr() {
+  @include flex-direction(column-reverse);
+}
+
+//Flex wrap
+@mixin fx-w-nw() {
+  @include flex-wrap(nowrap);
+}
+@mixin fx-w-w() {
+  @include flex-wrap(wrap);
+}
+@mixin fx-w-ws() {
+  @include flex-wrap(wrap-reverse);
+}
+
+//Align items
+@mixin ai-fs() {
+  @include align-items(flex-start);
+}
+@mixin ai-fe() {
+  @include align-items(flex-end);
+}
+@mixin ai-s() {
+  @include align-items(stretch);
+}
+@mixin ai-c() {
+  @include align-items(center);
+}
+@mixin ai-bl() {
+  @include align-items(baseline);
+}
+
+//Align self
+@mixin as-fs() {
+  @include align-self(flex-start);
+}
+@mixin as-fe() {
+  @include align-self(flex-end);
+}
+@mixin as-s() {
+  @include align-self(stretch);
+}
+@mixin as-c() {
+  @include align-self(center);
+}
+@mixin as-bl() {
+  @include align-self(baseline);
+}
+
+//Align content
+@mixin ac-fs() {
+  @include align-content(flex-start);
+}
+@mixin ac-fe() {
+  @include align-content(flex-end);
+}
+@mixin as-s() {
+  @include align-content(stretch);
+}
+@mixin as-c() {
+  @include align-content(center);
+}
+@mixin as-sb() {
+  @include align-content(space-between);
+}
+@mixin as-sa() {
+  @include align-content(space-around);
+}

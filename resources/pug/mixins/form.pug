@@ -1,0 +1,10 @@
+//-
+//- Form field
+mixin form__field( label )
+  .form__field&attributes(attributes)
+    if label
+      .form__label
+        label=label
+    .form__input
+      if block
+        block

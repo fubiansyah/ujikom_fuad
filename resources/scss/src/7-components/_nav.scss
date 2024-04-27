@@ -1,0 +1,154 @@
+//- 7-components/nav
+
+.nav {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    > li {
+      > a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: $text-sm;
+        font-weight: 600;
+        padding: 1.2rem 3rem;
+        border-radius: 0.8rem;
+        transition: all 0.4s;
+        color: #{$color-black};
+
+        .icon {
+          margin-right: 1rem;
+          font-size: $text-md;
+          width: 2rem;
+
+          + span {
+            color: $color-black;
+          }
+        }
+
+        .nav__toggle {
+          margin-left: auto;
+          font-size: 1.2rem;
+          transition: transform 0.4s;
+        }
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    transition: all 0.4s;
+  }
+
+  //- Horizontal
+  &--horizontal {
+    > ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      > li {
+        margin: 0 0.5rem;
+
+        > a {
+          &:hover {
+            background-color: #{$color-primary};
+            color: #{$color-white};
+
+            .icon + span {
+              color: $color-primary;
+            }
+          }
+
+          &[data-state="active"], &.active {
+            background-color: #{$color-primary};
+            color: #{$color-white};
+          }
+        }
+      }
+    }
+  }
+
+  //- Vertical
+  &--vertical {
+    .nav__title {
+      font-size: $text-md;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+    > ul {
+      > li {
+        // border-bottom: 1px solid #{$color-grey};
+        > a {
+          padding: 2rem 0;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  //- Social
+  &--social {
+    > ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      > li {
+        margin: 0 1rem;
+
+        > a {
+          font-size: 2rem;
+          color: #{$color-grey};
+          transition: all 0.4s;
+
+          &:hover {
+            color: #{$color-black};
+          }
+        }
+      }
+    }
+  }
+
+  //-
+  //- Submenu
+  &__submenu {
+    overflow: hidden;
+    transition: all 0.4s;
+
+    ul {
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      > li {
+        margin-bottom: 12px;
+
+        > a {
+          font-size: $text-xs;
+          color: lighten($color-black, 15%);
+
+          &:hover {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+
+  &--with-icon {
+    .nav__submenu {
+      padding-left: 3rem;
+    }
+  }
+}
+
+[data-collapsed="false"] {
+  .nav__toggle {
+    transform: rotate(-90deg);
+  }
+}

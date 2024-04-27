@@ -1,0 +1,100 @@
+//- 2-design-tokens/color
+
+.text-- {
+  &black {
+    color: #{$color-black};
+  }
+  &white {
+    color: #{$color-white};
+  }
+  &muted {
+    color: #{$color-muted};
+  }
+  &grey {
+    color: #{$color-grey};
+  }
+  &primary {
+    color: #{$color-primary};
+  }
+  &secondary {
+    color: #{$color-secondary};
+  }
+  &success {
+    color: #{$color-success};
+  }
+  &warning {
+    color: #{$color-warning};
+  }
+  &danger {
+    color: #{$color-danger};
+  }
+  &info {
+    color: #{$color-info};
+  }
+}
+
+.bg-- {
+  &black {
+    background-color: #{$color-black};
+  }
+  &white {
+    background-color: #{$color-white};
+  }
+  &muted {
+    background-color: #{$color-muted};
+  }
+  &grey {
+    background-color: #{$color-grey};
+  }
+  &primary {
+    background-color: #{$color-primary};
+  }
+  &secondary {
+    background-color: #{$color-secondary};
+  }
+  &success {
+    background-color: #{$color-success};
+  }
+  &warning {
+    background-color: #{$color-warning};
+  }
+  &danger {
+    background-color: #{$color-danger};
+  }
+  &info {
+    background-color: #{$color-info};
+  }
+}
+
+.border-- {
+  &black {
+    border-color: #{$color-black};
+  }
+  &white {
+    border-color: #{$color-white};
+  }
+  &muted {
+    border-color: #{$color-muted};
+  }
+  &grey {
+    border-color: #{$color-grey};
+  }
+  &primary {
+    border-color: #{$color-primary};
+  }
+  &secondary {
+    border-color: #{$color-secondary};
+  }
+  &success {
+    border-color: #{$color-success};
+  }
+  &warning {
+    border-color: #{$color-warning};
+  }
+  &danger {
+    border-color: #{$color-danger};
+  }
+  &info {
+    border-color: #{$color-info};
+  }
+}
